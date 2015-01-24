@@ -6379,6 +6379,7 @@
     <string name="qs_tile_notifications">Notifications</string>
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_tile_compass">Compass</string>
+    <string name="qs_tile_screen_timeout">Screen timeout</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
