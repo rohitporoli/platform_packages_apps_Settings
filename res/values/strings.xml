@@ -6346,4 +6346,10 @@
     <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
     <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
     <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+
+    <string name="app_security_title">App security</string>
+
+    <!-- Saosp Settings menus -->
+    <string name="simpleaosp_settings_title">Build Tweaks</string>
+    <string name="keywords_simpleaosp">simpleaosp</string>
 </resources>
