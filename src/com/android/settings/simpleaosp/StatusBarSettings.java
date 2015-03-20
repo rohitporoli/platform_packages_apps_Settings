@@ -16,7 +16,6 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.cyanogenmod.qs.QSTiles;
 import com.android.settings.Utils;
 import android.database.ContentObserver;
 import android.net.Uri;
@@ -39,8 +38,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private ListPreference mQuickPulldown;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-
-    private Preference mQSTiles;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -79,17 +76,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updateQuickPulldownSummary(statusQuickPulldown);
         }
-
-        mQSTiles = findPreference("qs_order");
     }
     @Override
     public void onResume() {
         super.onResume();
         updateClockStyleDescription();
 
-        int qsTileCount = QSTiles.determineTileCount(getActivity());
-        mQSTiles.setSummary(getResources().getQuantityString(R.plurals.qs_tiles_summary,
-                    qsTileCount, qsTileCount));
     }
 
     @Override
