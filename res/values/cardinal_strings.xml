@@ -40,4 +40,8 @@
     <!-- About phone screen, OrionOS device maintainer name -->
     <string name="device_maintainer">Device maintainer</string>
     <string name="device_maintainers">Device maintainers</string> 
- </resources>
+
+	<!-- Changelog -->
+    <string name="changelog_cardinal_title">Changelog</string>
+    <string name="changelog_cardinal_error">Unable to load changelog</string>
+</resources>
