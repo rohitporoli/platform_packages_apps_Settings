@@ -322,9 +322,13 @@ public class SecuritySettings extends SettingsPreferenceFragment
         if (!um.hasUserRestriction(UserManager.DISALLOW_CONFIG_CREDENTIALS)) {
             Preference credentialStorageType = root.findPreference(KEY_CREDENTIAL_STORAGE_TYPE);
 
-            final int storageSummaryRes =
-                mKeyStore.isHardwareBacked() ? R.string.credential_storage_type_hardware
-                        : R.string.credential_storage_type_software;
+            int storageSummaryRes;
+            try {
+                storageSummaryRes = mKeyStore.isHardwareBacked() ?
+                        R.string.credential_storage_type_hardware :
+                        R.string.credential_storage_type_software;
+            } catch (Exception e) {
+                storageSummaryRes = R.string.credentials_settings_not_available; };
             credentialStorageType.setSummary(storageSummaryRes);
         } else {
             PreferenceGroup credentialsManager = (PreferenceGroup)
@@ -589,7 +593,13 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
 
         if (mResetCredentials != null) {
-            mResetCredentials.setEnabled(!mKeyStore.isEmpty());
+            boolean enabled = false;
+            try {
+               enabled = !mKeyStore.isEmpty();
+            } catch (Exception e) {
+               e.printStackTrace();
+            };
+            mResetCredentials.setEnabled(enabled);
         }
     }
 
@@ -808,9 +818,13 @@ public class SecuritySettings extends SettingsPreferenceFragment
             if (!um.hasUserRestriction(UserManager.DISALLOW_CONFIG_CREDENTIALS)) {
                 KeyStore keyStore = KeyStore.getInstance();
 
-                final int storageSummaryRes = keyStore.isHardwareBacked() ?
-                        R.string.credential_storage_type_hardware :
-                        R.string.credential_storage_type_software;
+                int storageSummaryRes;
+                try {
+                    storageSummaryRes = keyStore.isHardwareBacked() ?
+                            R.string.credential_storage_type_hardware :
+                            R.string.credential_storage_type_software;
+                } catch (Exception e) {
+                    storageSummaryRes = R.string.credentials_settings_not_available; };
 
                 data = new SearchIndexableRaw(context);
                 data.title = res.getString(storageSummaryRes);
