@@ -88,7 +88,13 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- Device Maintainer -->
+        <!-- Cardinal  version -->
+        <Preference android:key="cardinal_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/cardinal_version"
+                android:summary="@string/cardinal_version_default" />
+
+	    <!-- Device Maintainer -->
         <Preference android:key="device_maintainer"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/device_maintainer"

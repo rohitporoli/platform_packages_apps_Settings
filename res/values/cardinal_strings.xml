@@ -44,4 +44,8 @@
 	<!-- Changelog -->
     <string name="changelog_cardinal_title">Changelog</string>
     <string name="changelog_cardinal_error">Unable to load changelog</string>
+
+	<!--Cardinal Version-->
+     <string name="cardinal_version">Cardinal-AOSP Version</string>
+     <string name="cardinal_version_default">Unknown</string>
 </resources>

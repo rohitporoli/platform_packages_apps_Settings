@@ -77,25 +77,14 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_SECURITY_PATCH = "security_patch";
+    private static final String KEY_CARDINAL_VERSION = "cardinal_version";
     private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
     private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
-<<<<<<< HEAD
     private static final String KEY_DEV_INFO = "dev_info";
-=======
-    private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_DEVICE_MAINTAINER = "device_maintainer";
-    private static final String KEY_MOD_BUILD_DATE = "build_date";
-    private static final String KEY_MOD_API_LEVEL = "mod_api_level";
-    private static final String KEY_CM_UPDATES = "cm_updates";
-    private static final String KEY_UBER_AND = "uber_android";
-    private static final String KEY_UBER_KERNEL = "uber_kernel";
-    private static final String KEY_UBER_FLAGS = "uber_flags";
-    private static final String KEY_ORION_OTA = "slimota";
-
->>>>>>> 77198de... settings: Add back OrionOS Device Maintainers
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
     long[] mHits = new long[3];
@@ -143,6 +132,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setMaintainerSummary(KEY_DEVICE_MAINTAINER, "ro.cardinal.maintainer");
+
+       setValueSummary(KEY_CARDINAL_VERSION, "ro.cardinal.version");
+       findPreference(KEY_CARDINAL_VERSION).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
