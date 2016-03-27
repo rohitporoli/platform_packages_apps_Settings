@@ -38,9 +38,9 @@
     <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accept all file types</string>
 
-    <string name="derper_1">Sri Harsha [srisurya95]</string>
+    <string name="derper_1">Sri Harsha \[srisurya95\]</string>
     <string name="derp1_description">Lead derper, medical aspirant, AOSP lover, Themer</string>
-    <string name="derper_2">Akhil Narang [fat guy]</strings>
+    <string name="derper_2">Akhil Narang \[fat guy\]</strings>
     <string name="derp2_description">Derper, AOSP and Layers and FOOD LOVER <3, always hungry</string>
     <string name="derp_category">AOSP-RRO Developers</string>
 </resources>
