@@ -19,17 +19,11 @@
 
 	<!-- Describe teh thogs -->
 
-        <PreferenceCategory
-		android:title="@string/derp_category">
-
-	 <Preference style="?android:preferenceInformationStyle"
-                android:title="@string/derper_1"
-                android:summary="@string/derp1_description"/>
-
-         <Preference style="?android:preferenceInformationStyle"
-                android:title="@string/derper_2"
-                android:summary="@string/derp2_description"/>
-	</PreferenceCategory>
+        <PreferenceScreen
+		android:title="@string/derp_category"
+		android:summary="Find Out About The Devs"
+		android:key="teh_durps"
+		android:fragment="com.android.settings.aosprro.derps" />
 
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
