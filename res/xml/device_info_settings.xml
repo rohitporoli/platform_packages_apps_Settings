@@ -17,6 +17,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+	<!-- Describe teh thogs -->
+
+        <PreferenceCategory
+		android:title="@string/derp_category">
+
+	 <Preference style="?android:preferenceInformationStyle"
+                android:title="@string/derper_1"
+                android:summary="@string/derp1_description"/>
+
+         <Preference style="?android:preferenceInformationStyle"
+                android:title="@string/derper_2"
+                android:summary="@string/derp2_description"/>
+	</PreferenceCategory>
+
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title"
