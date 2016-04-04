@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- PERSONALIZATION -->
+    <string name="header_category_cardinal">Personalization</string>
+    <string name="cardinal_settings_title">Cardinal Extras</string>
+
+    <!-- CARDINAL EXTRAS -->
+    <string name="cardinal_menu_personalizaton">Customizations</string>
+    <string name="status_bar_screen_title">Status bar</string>
+    <string name="buttons_screen_title">Buttons</string>
+
+</resources>

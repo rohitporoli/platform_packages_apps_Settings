@@ -2429,6 +2429,10 @@
                 android:value="true" />
         </activity>
 
+		<!-- CARDINAL EXTARS START -->
+        <activity android:name=".cardinal.CardinalSettings" />
+        <!-- CARDINAL EXTRAS END -->
+		
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"

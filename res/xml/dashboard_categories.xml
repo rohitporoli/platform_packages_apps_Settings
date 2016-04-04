@@ -72,6 +72,19 @@
 
     </dashboard-category>
 
+	<!-- CUSTOMIZATIONS -->
+    <dashboard-category
+            android:id="@+id/cardinal_section"
+            android:title="@string/header_category_cardinal" >
+
+        <!-- CARDINAL EXTRAS -->
+        <dashboard-tile
+                android:id="@+id/cardimal_settings"
+                android:title="@string/cardinal_settings_title"
+                android:fragment="com.android.settings.cardinal.CardinalSettings" 
+        		android:icon="@drawable/ic_settings_cardinal" />
+    </dashboard-category>
+	
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
