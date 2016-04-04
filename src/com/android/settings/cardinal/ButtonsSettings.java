@@ -39,9 +39,8 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
                     value ? 1 : 0);
+            return true;
         }
-          return true;
-		}
         return false;
     }
 
