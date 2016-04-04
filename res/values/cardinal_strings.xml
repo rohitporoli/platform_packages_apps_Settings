@@ -10,4 +10,9 @@
     <string name="status_bar_screen_title">Status bar</string>
     <string name="buttons_screen_title">Buttons</string>
 
+	<!-- Wakeup section under Display settings -->
+    <string name="wakeup_section_header">Wake up</string>
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
 </resources>
