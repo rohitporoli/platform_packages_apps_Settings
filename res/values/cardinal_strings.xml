@@ -9,7 +9,8 @@
     <string name="cardinal_menu_personalizaton">Customizations</string>
     <string name="status_bar_screen_title">Status bar</string>
     <string name="buttons_screen_title">Buttons</string>
-
+    <string name="recents_screen_title">Recents</string>
+	
 	<!-- Wakeup section under Display settings -->
     <string name="wakeup_section_header">Wake up</string>
     <!-- Volume rocker wake -->

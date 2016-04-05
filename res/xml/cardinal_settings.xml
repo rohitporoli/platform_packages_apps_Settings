@@ -15,5 +15,9 @@
         android:key="buttons_general_category"
         android:title="@string/buttons_screen_title" />
 
+	<PreferenceScreen
+        android:key="recents_general_category"
+        android:title="@string/recents_screen_title" />
+
 </PreferenceCategory>
 </PreferenceScreen>
