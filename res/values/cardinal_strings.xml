@@ -46,6 +46,10 @@
     <string name="changelog_cardinal_error">Unable to load changelog</string>
 
 	<!--Cardinal Version-->
-     <string name="cardinal_version">Cardinal-AOSP Version</string>
-     <string name="cardinal_version_default">Unknown</string>
+    <string name="cardinal_version">Cardinal-AOSP Version</string>
+    <string name="cardinal_version_default">Unknown</string>
+
+	<!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default" translatable="false">2015-01-01-0000</string> 
 </resources>
