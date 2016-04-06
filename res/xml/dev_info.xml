@@ -17,8 +17,12 @@ implied.
 
 <PreferenceScreen 
 xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="AOSP-RRO Developers">
+        android:title="Developers">
 
+ <PreferenceCategory
+				android:key="rro"
+				android:title="@string/aosp_rro_devs_header" >
+ 
  <Preference style="?android:preferenceInformationStyle"
                 android:title="@string/dev_1"
                 android:summary="@string/dev1_description"/>
@@ -26,5 +30,22 @@ xmlns:android="http://schemas.android.com/apk/res/android"
          <Preference style="?android:preferenceInformationStyle"
                 android:title="@string/dev_2"
                 android:summary="@string/dev2_description"/>
+			
+	</PreferenceCategory>	
+	
+ <PreferenceCategory
+				android:key="cardinal"
+				android:title="@string/cardinal_devs_header" >
+ 
+		 <Preference style="?android:preferenceInformationStyle"
+                android:title="@string/dev_3"
+                android:summary="@string/dev3_description"/>
+		
+		<Preference style="?android:preferenceInformationStyle"
+                android:title="@string/dev_4"
+                android:summary="@string/dev4_description"/>
+ 
+ </PreferenceCategory>
+ 
 </PreferenceScreen>
 

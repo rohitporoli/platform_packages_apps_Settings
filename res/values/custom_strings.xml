@@ -45,11 +45,17 @@
     <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Enabled</string>
     <string name="settings_reset_button">Reset</string>
-
+    
+	<!-- Developers -->
     <string name="dev_1">Sri Harsha &#91;srisurya95&#93;</string>
-    <string name="dev1_description">Lead developer, medical aspirant, AOSP lover, Themer</string>
+    <string name="dev1_description">AOSP-RRO Lead Developer, medical aspirant, AOSP lover, Themer</string>
     <string name="dev_2">Akhil Narang &#91;fat guy&#93;</string>
     <string name="dev2_description">Helper, AOSP and Layers and FOOD &#60;3LOVER , always hungry</string>
-    <string name="dev_info">AOSP-RRO Developers</string>
-
+    <string name="dev_3">Adarsh M.R (Adarsh1998)</string>
+    <string name="dev3_description">Cardinal-AOSP Lead Developer</string>
+	<string name="dev_4">Rohit Poroli (rohitporoli)</string>
+    <string name="dev4_description">Cardinal-AOSP Developer, onyx lover :)</string>
+	<string name="dev_info">Developers</string>
+    <string name="aosp_rro_devs_header">AOSP-RRO</string>
+	<string name="cardinal_devs_header">Cardinal-AOSP</string>
 </resources>
